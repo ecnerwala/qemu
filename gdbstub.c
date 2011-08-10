@@ -2016,3 +2016,8 @@ static void register_types(void)
 
 type_init(register_types);
 #endif
+
+int gdbserver_running(void)
+{
+    return gdbserver_state != NULL;
+}
